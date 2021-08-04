@@ -3,10 +3,9 @@ using namespace std;
 
 int a[90];
 
-int F(int n) {
+int f(int n) {
 	a[0] = 0;
 	a[1] = 1;
-
 	for (int i = 0; i < n; i++) {
 		a[i + 2] = a[i + 1] + a[i];
 	}
@@ -16,6 +15,5 @@ int F(int n) {
 int main() {
 	int n;
 	cin >> n;
-	cout << F(n) << endl;
-
+	cout << f(n);
 }
