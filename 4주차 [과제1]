@@ -1,1 +1,23 @@
 
+#include <iostream>
+using namespace std;
+
+int main() {
+
+	int bugger[3];
+	int a, b;
+
+	cin >> bugger[0] >> bugger[1] >> bugger[2] >> a >> b;
+
+	int c = bugger[0];
+
+	for (int i = 1; i < 3; i++) {
+		if (c > bugger[i])
+			c = bugger[i];
+	}
+	int set = a > b ? b : a;
+
+	cout << set + c - 50;
+
+	return 0;
+}
